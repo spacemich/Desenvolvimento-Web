@@ -1,0 +1,23 @@
+/*
+Estilos da página index.html
+
+*/
+body {
+    background-image: url('/Desenvolvimento-Web/assets/img/ciberfofo.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}    
+h1 {background-color:rgb(245, 181, 173); color:rgb(0, 0, 0);}
+#cored{color: rgb(126, 37, 44);}
+#foto_perfil {width: 300px; height:300px ;}
+
+
+/*
+Estilos da página contato.html
+*/
+body {
+    background-image: url('/Desenvolvimento-Web/assets/img/ciberfofo2.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
