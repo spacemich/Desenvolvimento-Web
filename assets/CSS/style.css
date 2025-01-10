@@ -21,8 +21,9 @@ h1 {
     flex-flow: row wrap;
     justify-content: flex-start;
     align-items: Center;
-
 }
+
+.testa li { display: inline;}
 
 #cored {
     color: rgb(126, 37, 44);
