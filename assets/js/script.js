@@ -27,18 +27,32 @@ function validaEmail() {
     if (email.value.indexOf('@') == -1) {
         txtEmail.innerHTML = 'E-mail Inválido'
         txtEmail.style.color = 'red'
+        txtEmail.style.backgroundColor = 'yellow'
     } else {
         txtEmail.innerHTML = 'E-mail Válido'
         txtEmail.style.color = 'green'
-        emailOK = true
+        txtEmail.style.backgroundColor = 'pink'
     }
 
 }
 
-function enviar() {
-    if (nomeOK == true && emailOK == true)
-        alert('formulário enviado com sucesso!')
-}else {
-    alert('Para enviar necessário preencher o formulário corretamente....')
-
+}
+function validaAssunto() {
+    let txtAssunto = document.querySelector('#txtAssunto')
+    if (assunto.value.lenght >= 120) {
+        txtAssunto.innerHTML = 'Limite máximo de 120 caracteres'
+        txtAssunto.style.color = 'red'
+        tx
+    } else {
+        txtAssunto.style.display = 'none'
+        txtEmail.style.color = 'green'
+        assuntoOK = true
+    }
+    function enviar() {
+        if (nomeOK == true && emailOK == true && assuntoOK == true) {
+            alert('formulário enviado com sucesso!')
+        } else {
+            alert('Para enviar necessário preencher o formulário corretamente....')
+        }
+    }
 }
