@@ -1,9 +1,9 @@
 let nome = document.getElementById('nome')
 let email = document.querySelector('#email')
 let assunto = document.querySelector('#assunto')
-let nameOK = false
-let emailOK = false
-let assuntoOK = false
+let nomeOk = false
+let emailOk = false
+let assuntoOk = false
 
 nome.style.width = '35%'
 email.style.width = '35%'
@@ -19,7 +19,7 @@ function validaNome() {
         TxtNome.innerHTML = 'Nome Válido'
         TxtNome.style.color = 'green'
         TxtNome.style.backgroundColor = 'pink'
-        nomeOK = true
+        nomeOk = true
     }
 }
 function validaEmail() {
@@ -32,27 +32,26 @@ function validaEmail() {
         txtEmail.innerHTML = 'E-mail Válido'
         txtEmail.style.color = 'green'
         txtEmail.style.backgroundColor = 'pink'
+        emailOk = true
     }
 
 }
 
-}
 function validaAssunto() {
     let txtAssunto = document.querySelector('#txtAssunto')
-    if (assunto.value.lenght >= 120) {
+    if (assunto.value.length >= 120) {
         txtAssunto.innerHTML = 'Limite máximo de 120 caracteres'
         txtAssunto.style.color = 'red'
-        tx
     } else {
         txtAssunto.style.display = 'none'
-        txtEmail.style.color = 'green'
-        assuntoOK = true
+        txtAssunto.style.color = 'green'
+        assuntoOk = true
     }
-    function enviar() {
-        if (nomeOK == true && emailOK == true && assuntoOK == true) {
-            alert('formulário enviado com sucesso!')
-        } else {
-            alert('Para enviar necessário preencher o formulário corretamente....')
-        }
+}
+function enviar1() {
+    if (nomeOk == true && emailOk == true && assuntoOk == true) {
+        alert('formulário enviado com sucesso!')
+    } else {
+        alert('Para enviar necessário preencher o formulário corretamente....')
     }
 }
